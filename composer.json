@@ -1,0 +1,5 @@
+{
+    "require": {
+        "fileeye/pel": "^0.9.20"
+    }
+}
