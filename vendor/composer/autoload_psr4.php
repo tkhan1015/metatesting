@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'lsolesen\\pel\\' => array($vendorDir . '/fileeye/pel/src'),
+    'CSD\\Image\\' => array($vendorDir . '/frameright/image-metadata-parser/src'),
 );

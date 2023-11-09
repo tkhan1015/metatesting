@@ -11,12 +11,20 @@ class ComposerStaticInit11bfaffc88064682f3841c1e5bd3a932
         array (
             'lsolesen\\pel\\' => 13,
         ),
+        'C' => 
+        array (
+            'CSD\\Image\\' => 10,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'lsolesen\\pel\\' => 
         array (
             0 => __DIR__ . '/..' . '/fileeye/pel/src',
+        ),
+        'CSD\\Image\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/frameright/image-metadata-parser/src',
         ),
     );
 

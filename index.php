@@ -25,6 +25,10 @@
 
 /* IPTC */
 
+use CSD\Image\Image;
+use lsolesen\pel\PelJpeg;
+use lsolesen\pel\PelTag;
+
 define("IPTC_OBJECT_NAME", "005");
 define("IPTC_EDIT_STATUS", "007");
 define("IPTC_PRIORITY", "010");
@@ -167,8 +171,30 @@ $objIPTC->setValue(IPTC_HEADLINE, "Schneeballschlact");
 //set description
 $objIPTC->setValue(IPTC_COUNTRY, "Schweiz");*/
 
-echo $objIPTC->getValue(IPTC_CAPTION);
+echo $objIPTC->getValue(IPTC_CAPTION); //Corruptions by Enemy.
 
+
+//EXIF
+
+// Peel testing -> JPG ONLY x.x
+$jpeg = new PelJpeg($file);
+$ifd0 = $jpeg->getExif()->getTiff()->getIfd();
+$entry = $ifd0->getEntry(PelTag::IMAGE_DESCRIPTION);
+$entry->setValue('Edited by PEL');
+$jpeg->saveFile($file);
+
+// PNGImagick
+$image = new Imagick();
+$image->newImage($file); // or load your PNG into Imagick
+
+$image->setImageProperty('keywords', 'Imagick');
+echo $image->getImageProperty('keywords');
+
+//Framelight
+
+$framelight = Image::fromFile($file);
+$headline = $framelight->getXmp()->getHeadline();
+$camera = $framelight->getExif()->getCamera();
 
 
 ?>

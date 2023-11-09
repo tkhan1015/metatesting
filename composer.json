@@ -1,5 +1,13 @@
 {
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Frameright/php-image-metadata-parser.git"
+        }
+    ],
     "require": {
-        "fileeye/pel": "^0.9.20"
+        "fileeye/pel": "^0.9.20",
+        "frameright/image-metadata-parser": "dev-master"
     }
 }

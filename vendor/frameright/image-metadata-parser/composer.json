@@ -1,0 +1,42 @@
+{
+    "name": "frameright/image-metadata-parser",
+    "license": "MIT",
+    "keywords": ["Image", "Photo", "Metadata", "XMP", "IPTC", "Exif", "Image Display Control", "IDC", "Frameright"],
+    "description": "Image metadata parsing library",
+    "authors": [
+        {
+            "name": "Frameright (Coberg Ltd)",
+            "email": "hello@frameright.io",
+            "homepage": "https://frameright.io/",
+            "role": "Developer"
+        },
+        {
+            "name": "Aurelien Lourot",
+            "email": "software@lourot.dev",
+            "homepage": "https://lourot.dev/",
+            "role": "Developer"
+        },
+        {
+            "name": "Daniel Chesterton",
+            "email": "daniel@chestertondevelopment.com",
+            "homepage": "http://www.chestertondevelopment.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "CSD\\Image\\": "src/" }
+    },
+    "require": {
+        "php": ">=5.5",
+        "ext-xml": "*"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.6",
+        "phpunit/phpunit": "^9.5.25",
+        "phpcompatibility/php-compatibility": "^9.3.5"
+    },
+    "scripts": {
+        "lint": "./vendor/bin/phpcs",
+        "test": "./vendor/bin/phpunit"
+    }
+}

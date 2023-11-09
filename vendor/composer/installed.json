@@ -63,6 +63,88 @@
                 "source": "https://github.com/FileEye/pel/tree/0.9.20"
             },
             "install-path": "../fileeye/pel"
+        },
+        {
+            "name": "frameright/image-metadata-parser",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Frameright/php-image-metadata-parser.git",
+                "reference": "457b8f73eb419ab062dfae2d69da30440423754f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Frameright/php-image-metadata-parser/zipball/457b8f73eb419ab062dfae2d69da30440423754f",
+                "reference": "457b8f73eb419ab062dfae2d69da30440423754f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.6",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "phpunit/phpunit": "^9.5.25"
+            },
+            "time": "2023-10-09T12:52:31+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "CSD\\Image\\": "src/"
+                }
+            },
+            "scripts": {
+                "lint": [
+                    "./vendor/bin/phpcs"
+                ],
+                "test": [
+                    "./vendor/bin/phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frameright (Coberg Ltd)",
+                    "email": "hello@frameright.io",
+                    "homepage": "https://frameright.io/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Aurelien Lourot",
+                    "email": "software@lourot.dev",
+                    "homepage": "https://lourot.dev/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Daniel Chesterton",
+                    "email": "daniel@chestertondevelopment.com",
+                    "homepage": "http://www.chestertondevelopment.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Image metadata parsing library",
+            "keywords": [
+                "Exif",
+                "Frameright",
+                "IDC",
+                "IPTC",
+                "Image",
+                "Image Display Control",
+                "Metadata",
+                "Photo",
+                "XMP"
+            ],
+            "support": {
+                "source": "https://github.com/Frameright/php-image-metadata-parser/tree/1.1.0",
+                "issues": "https://github.com/Frameright/php-image-metadata-parser/issues"
+            },
+            "install-path": "../frameright/image-metadata-parser"
         }
     ],
     "dev": true,

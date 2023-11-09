@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'd664b6111730f968d68b54547271b41441774a56',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'd664b6111730f968d68b54547271b41441774a56',
             'dev_requirement' => false,
         ),
         'fileeye/pel' => array(
@@ -26,6 +26,17 @@
             'install_path' => __DIR__ . '/../fileeye/pel',
             'aliases' => array(),
             'reference' => '1675cbd44e89ff8f01b9576cf32ec1b4a4a67ede',
+            'dev_requirement' => false,
+        ),
+        'frameright/image-metadata-parser' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../frameright/image-metadata-parser',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'reference' => '457b8f73eb419ab062dfae2d69da30440423754f',
             'dev_requirement' => false,
         ),
     ),
